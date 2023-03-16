@@ -1,18 +1,15 @@
 # Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+# -- Project information
 
-project = 'rmKit-docs'
-copyright = '2023, Timothee Yeramian'
-author = 'Timothee Yeramian'
-release = '2023.1'
+project = 'Lumache'
+copyright = '2021, Graziella'
+author = 'Graziella'
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+release = '0.1'
+version = '0.1.0'
+
+# -- General configuration
 
 extensions = [
     'sphinx.ext.duration',
@@ -26,18 +23,13 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
-
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
-exclude_patterns = []
 
-
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+# -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
 
+# -- Options for EPUB output
 epub_show_urls = 'footnote'
