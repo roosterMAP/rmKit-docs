@@ -1,22 +1,22 @@
-Welcome to Lumache's documentation!
-===================================
+rmKit Documetation
+==================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+**rmKit** is an addon for Blender that contains a wide variety of tools designer to streamline my personal workflow.
+The bulk of the tools aim to bolster Blender's modeling and uving tools.
+`The addon itself can be found on my personal GitHub <https://github.com/roosterMAP/rmKit>`_
+Feel free to use the addon any way you like!
 
 .. note::
 
-   This project is under active development.
+	This project is under active development.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+	usage
+	utils
+	sel
+	meshedit
+	uv

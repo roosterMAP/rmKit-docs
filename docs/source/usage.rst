@@ -1,34 +1,35 @@
 Usage
 =====
 
-.. _installation:
+.. _usage:
 
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To install the addon:
 
-.. code-block:: console
+#. Go to ``Edit > Preferences > Add-ons > Install``;
+#. Select the downloaded .zip file;
+#. Enable the addon by clicking a tickbox near its name;
+#. It's recommended to restart Blender;
 
-   (.venv) $ pip install lumache
+To uninstall the addon:
 
-Creating recipes
-----------------
+#. Go to ``Edit > Preferences > Add-ons``;
+#. Navigate to the addon in the list and expand its tab.;
+#. Press the ``Remove`` button;
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+.. note::
+    All user addons are added to the following dirs:
+	* Winddows: ``%appdata%\Blender Foundation\Blender\2.XX\scripts\addons\``
+	* Mac: ``~/Library/Application Support/Blender Foundation/Blender/2.XX/scripts/addons/``
+    You may manually install/uninstal from there.
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
 
-.. autoexception:: lumache.InvalidKindError
+Preferences
+------------
 
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+Currently, only Hotkeys are shown in the addon preferences. To learn what a command does, you will have to look it up in the docs.
+Once the rmKit addon is enabled in ``Edit > Preferences > Add-ons``, you can expand its tab to reveal the Hotkeys panel.
+Listed are all the operators that are included in the addon. While some are already exposed in the 3DVIEW and UVVIEW tool panels, many more only available once hotkeyed.
