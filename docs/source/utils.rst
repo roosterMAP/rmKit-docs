@@ -11,7 +11,7 @@ Subsequent transform tools will automatically align to the active transform orie
 Many tools in the rmKit addon support the workplane.
 
 .. note::
-	* To use ``Toggle Workplane`` bind it to a key in the addon Preferences in the ``3D View`` context.
+	* To use ``Toggle Workplane`` bind it to a key in the addon Preferences in the ``3D View`` context.;
 
 
 Mesh/Object Clipboard:
