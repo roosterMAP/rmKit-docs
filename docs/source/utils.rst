@@ -81,3 +81,45 @@ Copy the name of each item in the scene to its mesh data object.
 
 .. note::
 	* Operator is accessible as a button in the rmKit section of the tools panel.;
+
+
+.. _grabapplymaterial:
+
+Grab Apply Material
+-------------------
+
+Sample the material under the mouse cursor and apply it to the selection faces.
+
+.. note::
+	* Bind to a key in the addon Preferences in the ``Mesh`` context.
+
+
+.. _quickmaterial:
+
+Quick Material
+--------------
+
+This operator functions as a material creation utility. When executed, a modal dialog appears.
+
+* **Material** dropdown lets you select an active material. By default, the dialog is populated with the material sampled under the mouse cursor.;
+* Pressing the close button next to the Material dropdown will expose the **Name** input. Providing a name will create a new material and set it as active for the dialog.;
+* **Color** :: The viewport color and albedo of the active material.;
+* **Metalic** :: The metalness value of the active material.;
+* **Roughness** :: The roughness value of the active material.;
+* **World Width** :: The world scale of the 0-1 range of the U Texture Space axis.;
+* **World Height** :: The world scale of the 0-1 range of the V Texture Space axis.;
+* **OK** :: Pressing this will create a new material or modify the existing material using the inputs provided within the dialog.
+
+.. note::
+	* Bind to a key in the addon Preferences in the ``Mesh`` context.
+
+
+.. _materialcleanup:
+
+Material Cleanup
+----------------
+
+Operator removes unused materials on an object and adjusts the material indexing as needed.
+
+.. note::
+	* Bind to a key in the addon Preferences in the ``Mesh`` context and is accessible as a button in the rmKit section of the tools panel.;

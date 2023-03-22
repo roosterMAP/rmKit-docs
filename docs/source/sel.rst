@@ -29,9 +29,12 @@ Loop / Ring Selection
 ---------------------
 
 Alternate edge loop and edge ring selection algorithms.
+
 * ``Loop`` :: Extend current edge selection by loop. Utilizes 3DS Max algorithm.;
 	* Setting **Force Boundary** arg to True will always extend loops along open edges.;
+
 * ``Ring`` :: Extend current edge selection by ring. Utilizes 3DS Max algorithm.;
+
 In face mode, bothe ``Loop`` and ``Ring`` extend the face selection by adjacency from last face selection.
 
 .. note::
@@ -45,6 +48,7 @@ Continuous Selection
 --------------------
 
 * ``Select Continuous`` with **Add** or **Set** args do the same as ``Select Linked`` operator while in vert and face mode. In edge mode, The ``Loop`` described above is fired.;
+
 * ``Invert Continuous`` will invert the current component selection only on geometry continuous to the current selection.;
 
 .. note::
