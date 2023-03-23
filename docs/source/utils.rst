@@ -7,16 +7,17 @@ Utility Ops
 Mesh Clipboard
 --------------
 
-Three operators were added to allow the user to copy, cut, and paste selected faces. Outside of face mode, the ``Copy Objects`` and ``Paste Objects`` operators are called.
+Three operators were added to allow the user to copy, cut, and paste selected faces.
 
-* ``Copy`` :: Copy the face selection into the clipboard.;
+* ``Copy`` :: Copy the face selection into the clipboard.
 
-* ``Cut`` :: Copy the face selection into the clipboard then remove it from the mesh.;
+* ``Cut`` :: Copy the face selection into the clipboard then remove it from the mesh.
 
 * ``Paste`` :: Paste the geo in the clipboard to the active object.
 
 .. note::
-	* ``Copy``, ``Cut``, and ``Paste`` can be bound in the addon Preferences in the ``Mesh`` context.;
+	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
+	* It is prefferable that you bind these to the same keys as their object mode variants.
 
 
 .. _gridtoggle:
@@ -24,10 +25,10 @@ Three operators were added to allow the user to copy, cut, and paste selected fa
 Grid Toggle
 -----------
 
-``Grid Toggle`` will toggle the visibility of the grid axis and floor grid, or the workplane, depending on whats currently visible.
+``Grid Toggle`` will toggle the visibility of the grid axis and floor grid, or the workplane, depending on what's currently visible.
 
 .. note::
-	* ``Grid Toggle`` can be bound in the addon Preferences in the ``3D View`` context.;
+	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
 
 
 .. _workplane:
@@ -35,12 +36,19 @@ Grid Toggle
 Toggle Workplane
 ----------------
 
-The ``Toggle Workplane`` operatior creates a transform orientation aligned to the current element selection and draws a grid aligned to said orientation.
-Subsequent transform tools will automatically align to the active transform orientation.
+.. figure:: _static/workplane.jpg
+	:scale: 60%
+	:align: center
+
+	Workplane drawn to visualize transform orientation aligned to selected edge.
+
+The ``Toggle Workplane`` operator creates a transform orientation aligned to the current element selection and draws a grid aligned to said orientation.
+Subsequent transform tools will automatically align to the active transform orientation. Manually changing the transform orientation or running the operator again
+disables the workplane.
 Many tools in the rmKit addon support the workplane.
 
 .. note::
-	* To use ``Toggle Workplane`` bind it to a key in the addon Preferences in the ``3D View`` context.;
+	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
 
 
 .. _cursorpie:
@@ -48,17 +56,19 @@ Many tools in the rmKit addon support the workplane.
 3D Cursor Ops
 -------------
 
-A radial menu that contains quick access to default blender operations for managing the 3D Cursor as well as a few custom ones.
-The point bellow only cover the custom operators:
+A pie menu that contains quick access to default blender operations for managing the 3D Cursor as well as a few custom ones.
+The points below only cover the custom operators:
 
-* ``Cursor to Origin`` :: Same as ``Cursor to World Origin`` except moves to the center of the workplane when active.
+* ``Cursor to Origin``: Same as ``Cursor to World Origin`` except it moves to the center of the workplane if active.
 
-* ``Cursor to Selection and Orient`` :: Moves the 3D Cursor to the current selection and orients it based on the topology.
+* ``Cursor to Selection and Orient``: Moves the 3D Cursor to the current selection and orients it based on the topology.
 	
-* ``Unrotate Relative to Cursor`` :: Unrotates the selected components based on the orientation of the 3D Cursor.
+* ``Unrotate Relative to Cursor``: Unrotates the selected components based on the orientation of the 3D Cursor.
+
+* ``Object Pivot to Cursor``: Move the pivot of the mesh to the 3D Cursor and adjust the position and orientation of linked meshes such that they do not move as a result of changed pivot.
 
 .. note::
-	* To use ``3D Cursor Ops`` bind it to a key in the addon Preferences in the ``3D View`` context.;
+	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
 
 
 .. _dimensionstool:
@@ -66,10 +76,16 @@ The point bellow only cover the custom operators:
 Toggle Dimensions
 -----------------
 
-Toggles the visibility of a set of world axis drawn over the current component or object selection that displays the world space dimensions. Very usefull!
+.. figure:: _static/dimensions.jpg
+	:scale: 70%
+	:align: center
+
+	Dimensions drawn over selection.
+
+Toggles the visibility of a set of world axes drawn over the current selection that displays the world space dimensions.
 
 .. note::
-	* To use ``3D Cursor Ops`` bind it to a key in the addon Preferences in the ``3D View`` context or access it in the rmKit section of the tools panel.;
+	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
 
 
 .. _itemnametomeshname:
@@ -80,7 +96,7 @@ Item Name to Mesh Name
 Copy the name of each item in the scene to its mesh data object.
 
 .. note::
-	* Operator is accessible as a button in the rmKit section of the tools panel.;
+	* Operator is accessible as a button in the rmKit-Utils section of the tools panel.
 
 
 .. _grabapplymaterial:
@@ -99,15 +115,23 @@ Sample the material under the mouse cursor and apply it to the selection faces.
 Quick Material
 --------------
 
-This operator functions as a material creation utility. When executed, a modal dialog appears.
+.. figure:: _static/quickmaterial.jpg
+	:scale: 75%
+	:align: center
 
-* **Material** dropdown lets you select an active material. By default, the dialog is populated with the material sampled under the mouse cursor.;
-* Pressing the close button next to the Material dropdown will expose the **Name** input. Providing a name will create a new material and set it as active for the dialog.;
-* **Color** :: The viewport color and albedo of the active material.;
-* **Metalic** :: The metalness value of the active material.;
-* **Roughness** :: The roughness value of the active material.;
-* **World Width** :: The world scale of the 0-1 range of the U Texture Space axis.;
-* **World Height** :: The world scale of the 0-1 range of the V Texture Space axis.;
+	Modal dialog for creating/modifying material.
+
+This operator functions as a material creation utility. When executed, a modal dialog appears.
+Before opening the modal dialog, the operator samples the material under the mouse cursor. From here,
+changes to the material can be made via the properties exposed by the dialog.
+
+* **Material** dropdown lets you select an active material. By default, the dialog is populated with the material initially sampled under the mouse cursor.
+* Pressing the close button next to the Material dropdown will expose the **Name** input. Providing a name will create a new material and set it as active in the dialog.
+* **Color** :: The viewport color and albedo of the active material.
+* **Metalic** :: The metalness value of the active material.
+* **Roughness** :: The roughness value of the active material.
+* **World Width** :: The world scale of the 0-1 range of the U Texture Space axis.
+* **World Height** :: The world scale of the 0-1 range of the V Texture Space axis.
 * **OK** :: Pressing this will create a new material or modify the existing material using the inputs provided within the dialog.
 
 .. note::
@@ -119,7 +143,7 @@ This operator functions as a material creation utility. When executed, a modal d
 Material Cleanup
 ----------------
 
-Operator removes unused materials on an object and adjusts the material indexing as needed.
+This operator removes unused materials on selected objects and adjusts the material indexing as needed.
 
 .. note::
-	* Bind to a key in the addon Preferences in the ``Mesh`` context and is accessible as a button in the rmKit section of the tools panel.;
+	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
