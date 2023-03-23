@@ -19,4 +19,5 @@ Contents
 	utils
 	sel
 	meshedit
+	layers
 	uv
