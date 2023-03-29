@@ -247,9 +247,6 @@ The purpose of the ``Fit`` tools is to map the selected uv elements to a cached 
 UV Hotspot
 ==========
 
-Introduction
-------------
-
 .. figure:: _static/hotspot.jpg
 	:scale: 100%
 	:align: center
@@ -264,7 +261,7 @@ aims to minimize the time spend fidgeting with uvs.
 	:scale: 20%
 	:align: center
 
-Example Hotspot Atlas.
+	Example Hotspot Atlas.
 
 By mapping the surfaces of a mesh to the available hotspots in the atlas, we can quickly and easily make a model appear detailed and seamless by
 capitalizing on the bevels and contextual grime on the boarders of each hotspot.
