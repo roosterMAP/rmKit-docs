@@ -130,8 +130,8 @@ changes to the material can be made via the properties exposed by the dialog.
 * **Color** :: The viewport color and albedo of the active material.
 * **Metalic** :: The metalness value of the active material.
 * **Roughness** :: The roughness value of the active material.
-* **World Width** :: The world scale of the 0-1 range of the U Texture Space axis.
-* **World Height** :: The world scale of the 0-1 range of the V Texture Space axis.
+* **World Width** :: The world scale of the 0-1 range of the U Texture Space axis. See :ref:`Scale to Material Size <scaletomatsize>` operator.
+* **World Height** :: The world scale of the 0-1 range of the V Texture Space axis. See :ref:`Scale to Material Size <scaletomatsize>` operator.
 * **OK** :: Pressing this will create a new material or modify the existing material using the inputs provided within the dialog.
 
 .. note::
