@@ -46,7 +46,7 @@ In face mode, both ``Loop`` and ``Ring`` extend the face selection by adjacency 
 Continuous Selection
 --------------------
 
-* ``Select Continuous`` with **Add** or **Set** args do the same as ``Select Linked`` operator while in vert and face mode. In edge mode, The ``Loop`` operator described above is executed.
+* ``Select Continuous`` with **Add** or **Set** args do the same as ``Select Linked`` operator while in vert and face mode. In edge mode, the ``Loop`` operator described above is executed.
 
 * ``Invert Continuous`` will invert the current component selection only on geometry 3d continuous with the current selection.
 

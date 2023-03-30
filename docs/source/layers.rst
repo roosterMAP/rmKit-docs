@@ -17,7 +17,7 @@ Edge Weight Pie
 ---------------
 
 A pie menu that gives quick access to setting discrete **Crease** weights to the
-edge selection. There is a nested submenu for **Bevel Weight** if thats more your speed.
+edge selection. There is a nested submenu for **Bevel Weight** if that’s more your speed.
 
 .. note::
 	* Bind to a key in the addon Preferences in the ``Mesh`` context.
@@ -38,7 +38,7 @@ VNormal Kit
 and sharp edges.
 
 In order to use this tool, you must first ensure that **Auto Smooth** is enabled for the mesh. Also, any hard edges produced by a lower angle threshold
-will be preserved when using the VNorms tools. So if you dont want that, be sure to set it to 180.0.
+will be preserved when using the VNorms tools. So if you don’t want that, be sure to set it to 180.0.
 
 Vertex normals (also called Slip Normals Data) are computed in up to three passes using three selection sets respectively. Each pass iterates through all vertices and calculates
 the Split Normal data by only considering neighboring faces that are members of that set. **If a vertex is not a member of a face, then it will not get a Split Normal.**
@@ -57,10 +57,10 @@ the Split Normal data by only considering neighboring faces that are members of 
 
 * Toggling the ``Area Weights`` button will weigh generated Split Normals based on the surface area of neighboring faces.
 
-So what faces get added to selection sets?
-First lets define the problem: We want to make sure that edges and corners (even sharp ones) are slightly rounded. We also want smooth contiguous surfaces to have
+So, what faces get added to selection sets?
+First let’s define the problem: We want to make sure that edges and corners (even sharp ones) are slightly rounded. We also want smooth contiguous surfaces to have
 defined boundaries and the area between boundaries to have a nice transition.
-Thus we assign each boundary to the same selection set and exclude a trim of faces between each boundary (or loop of sharp edges). When we compute the Split Normals
+Thus, we assign each boundary to the same selection set and exclude a trim of faces between each boundary (or loop of sharp edges). When we compute the Split Normals
 by pressing ``Apply`` or ``ALL`` the result will be smooth shading within surfaces and a nice transition between each surface.
 We can refine the shading of each surface by giving some faces membership to the other selection set.
 The video below demonstrates some simple and more complex cases:

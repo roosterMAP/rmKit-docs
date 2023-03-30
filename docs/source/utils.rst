@@ -9,15 +9,15 @@ Mesh Clipboard
 
 Three operators were added to allow the user to copy, cut, and paste selected faces.
 
-* ``Copy`` :: Copy the face selection into the clipboard.
+* ``Copy`` : Copy the face selection to the clipboard.
 
-* ``Cut`` :: Copy the face selection into the clipboard then remove it from the mesh.
+* ``Cut`` : Copy the face selection to the clipboard and delete them from the mesh.
 
-* ``Paste`` :: Paste the geo in the clipboard to the active object.
+* ``Paste`` : Paste the geo from the clipboard to the active mesh.
 
 .. note::
 	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
-	* It is prefferable that you bind these to the same keys as their object mode variants.
+	* It is preferable that you bind these to the same keys as their object mode variants.
 
 
 .. _gridtoggle:
@@ -25,7 +25,7 @@ Three operators were added to allow the user to copy, cut, and paste selected fa
 Grid Toggle
 -----------
 
-``Grid Toggle`` will toggle the visibility of the grid axis and floor grid, or the workplane, depending on what's currently visible.
+``Grid Toggle`` will toggle the visibility of the grid axis and floor grid or the workplane depending on what's currently visible.
 
 .. note::
 	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
@@ -127,12 +127,12 @@ changes to the material can be made via the properties exposed by the dialog.
 
 * **Material** dropdown lets you select an active material. By default, the dialog is populated with the material initially sampled under the mouse cursor.
 * Pressing the close button next to the Material dropdown will expose the **Name** input. Providing a name will create a new material and set it as active in the dialog.
-* **Color** :: The viewport color and albedo of the active material.
-* **Metalic** :: The metalness value of the active material.
-* **Roughness** :: The roughness value of the active material.
-* **World Width** :: The world scale of the 0-1 range of the U Texture Space axis. See :ref:`Scale to Material Size <scaletomatsize>` operator.
-* **World Height** :: The world scale of the 0-1 range of the V Texture Space axis. See :ref:`Scale to Material Size <scaletomatsize>` operator.
-* **OK** :: Pressing this will create a new material or modify the existing material using the inputs provided within the dialog.
+* **Color** : The viewport color and albedo of the active material.
+* **Metalic** : The metalness value of the active material.
+* **Roughness** : The roughness value of the active material.
+* **World Width** : The world scale of the 0-1 range of the U Texture Space axis. See :ref:`Scale to Material Size <scaletomatsize>` operator.
+* **World Height** : The world scale of the 0-1 range of the V Texture Space axis. See :ref:`Scale to Material Size <scaletomatsize>` operator.
+* **OK** : Pressing this will create a new material or modify the existing material using the inputs provided within the dialog.
 
 .. note::
 	* Bind to a key in the addon Preferences in the ``Mesh`` context.
