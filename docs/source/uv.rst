@@ -92,11 +92,7 @@ This operator is only compatible with grid topologies.
 Rectangularize
 --------------
 
-``Rectangularize`` attempts to map the uvs of the current face selection to a rectangle. Is does this by doing a conformal uv unwrap, identifying four corners,
-flattening the edges in between and relaxing the inner uv verts.
-
-.. note::
-	* Bind to a key in the addon Preferences in the ``UV Editor`` context or find it in the rmKit section of the UV Editor tools panel.
+``Rectangularize`` is totally FUBAR. Do not use.
 
 
 .. _stitch:

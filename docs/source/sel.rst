@@ -31,6 +31,7 @@ Loop / Ring Selection
 Alternate edge loop and edge ring selection algorithms.
 
 * ``Loop``: Extend current edge selection by loop. Utilizes 3DS Max algorithm.
+
 	* Setting **Force Boundary** arg to True will always extend loops along open edges.
 
 * ``Ring``: Extend current edge selection by ring. Utilizes 3DS Max algorithm.
