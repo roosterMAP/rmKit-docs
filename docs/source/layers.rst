@@ -47,13 +47,11 @@ the Split Normal data by only considering neighboring faces that are members of 
 
 * Pressing the ``-`` button will clear selected faces from the set.
 
-* Holding down **Ctrl** will expose a ``++`` button which first clears set membership for all visible faces (for the relevant selection set row) and then adds the selected faces to the selection set.
+* Pressint the ``++`` button first clears set membership for all visible faces (for the relevant selection set row) and then adds the selected faces to the selection set.
 
 * Pressing one of the ``SEL#`` buttons will select faces that are members of that set.
 
-* Pressing ``Apply`` button will compute Split Normals data for the relevant set.
-
-* Pressing the ``ALL`` button will run the ``Apply`` for each selection set.
+* Pressing the ``APPLY`` button will compute the Split Normals data for each selection set in order.
 
 * Toggling the ``Area Weights`` button will weigh generated Split Normals based on the surface area of neighboring faces.
 
@@ -61,7 +59,7 @@ So, what faces get added to selection sets?
 First let’s define the problem: We want to make sure that edges and corners (even sharp ones) are slightly rounded. We also want smooth contiguous surfaces to have
 defined boundaries and the area between boundaries to have a nice transition.
 Thus, we assign each boundary to the same selection set and exclude a trim of faces between each boundary (or loop of sharp edges). When we compute the Split Normals
-by pressing ``Apply`` or ``ALL`` the result will be smooth shading within surfaces and a nice transition between each surface.
+by pressing ``APPLY`` the result will be smooth shading within surfaces and a nice transition between each surface.
 We can refine the shading of each surface by giving some faces membership to the other selection set.
 The video below demonstrates some simple and more complex cases:
 

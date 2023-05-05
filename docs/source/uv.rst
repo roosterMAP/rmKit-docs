@@ -188,16 +188,22 @@ change the icons and functionality of the button.
 The uv tools are divided into four categories: Move/Slam, Rotate, Scale, and Fit. See below for breakdowns.
 
 
+GUI State Buttons
+-----------------
+
+The top row of buttons in the GUI manages the state of the UI. Toggling these buttons will modify the UI to expose different ops. See below for more info.
+
+
 Move/Slam
 ---------
 
 * ``Move``: Pressing the directional buttons will offset the uv selection by the amount specified in the center of the Move GUI buttons.
 
-* ``Slam``: Holding down **Shift** will modify the direction buttons to include a grey dot. Pressing these will move the uv selection such that its bounds are flush with a side/corner of the unit uv square.
+* ``Slam``: Toggling ON the **Group** button will modify the direction buttons to include a grey dot. Pressing these will move the uv selection such that its bounds are flush with a side/corner of the unit uv square.
 
-* ``Local Slam``: Holding down **Ctrl** will also change the direction button style; this time with a yellow dot. Pressing these will evaluate each selected uv-discontinuous element individually and move their respective bounds such that they are flush with a side/corner of the unit uv square.
+* ``Local Slam``: Toggling ON the **Local** button to will also change the direction button style; this time with a yellow dot. Pressing these will evaluate each selected uv-discontinuous element individually and move their respective bounds such that they are flush with a side/corner of the unit uv square.
 
-* ``Anchor`` : Holding down **Alt** changes the directional button stile to include a red dot. Pressing these will toggle the state of the anchor for future transformations. An **Anchor** is a pinned corner or side of a bounding box. Subsequent transformations are done relative to this anchor. For example, anchoring the top left corner and rotating using the ``Rotate`` buttons below will rotate about the top left corner of the selection. This can be particularly useful for things like scale and flip operations as well.
+* ``Anchor`` : Toggling ON the **Anchor** button changes the directional button stile to include a red dot. Pressing these will toggle the state of the anchor for future transformations. An **Anchor** is a pinned corner or side of a bounding box. Subsequent transformations are done relative to this anchor. For example, anchoring the top left corner and rotating using the ``Rotate`` buttons below will rotate about the top left corner of the selection. This can be particularly useful for things like scale and flip operations as well.
 
 
 Rotate
@@ -205,7 +211,7 @@ Rotate
 
 * ``Rotate``: Pressing the rotate buttons will rotate clockwise or counter-clockwise by the angle amount specified in the center of the Rotate GUI buttons. If an **Anchor** point is set, rotations are done about the point in the evaluated bounds.
 
-* ``Rotate Local``: Holding down **Ctrl** will change the rotate button style; this time with a yellow **L**. Pressing these will evaluate each selected uv-discontinuous element individually and move their separately. If an **Anchor** point is set, rotations are done about the point in the evaluated bounds.
+* ``Rotate Local``: Toggling ON the **Local** button will change the rotate button style; this time with a yellow **L**. Pressing these will evaluate each selected uv-discontinuous element individually and move their separately. If an **Anchor** point is set, rotations are done about the point in the evaluated bounds.
 
 
 Scale
@@ -213,7 +219,7 @@ Scale
 
 * ``Scale``: Pressing the scale buttons will scale the uv selection by the scale factor specified in the top right of the Scale GUI buttons. The first column is for scaling up, and the second column is for scaling down. The first row is for **UV** scaling, the second row is for **U** scaling, and the third is for **V** scaling. The two buttons on the bottom right are for flipping about **V** and **U** respectively. If an **Anchor** point is set, scaling is done relative to a point in the evaluated bounds.
 
-* ``Local Scale``: Holding down **Ctrl** will change the scale button style; this time with a yellow **L**. Pressing these will evaluate each selected uv-discontinuous element individually and move their separately. If an **Anchor** point is set, scaling is done relative to a point in the evaluated bounds.
+* ``Local Scale``: Toggling ON the **Local** button will change the scale button style; this time with a yellow **L**. Pressing these will evaluate each selected uv-discontinuous element individually and move their separately. If an **Anchor** point is set, scaling is done relative to a point in the evaluated bounds.
 
 
 Fit
@@ -233,9 +239,9 @@ The purpose of the ``Fit`` tools is to map the selected uv elements to a cached 
 
 * When ``Move To`` is checked, the current uv selection will be moved to the center of the cached bounds during a mapping.
 
-* **Fit Local**: Holding down **Ctrl** will change the fit buttons to read **LU**. Pressing these will perform a fit operation on each uv-discontinuous element separately.
+* **Fit Local**: Toggling ON the **Local** button will change the fit buttons to read **LU**. Pressing these will perform a fit operation on each uv-discontinuous element separately.
 
-* **Fit Grid**: Holding down **Shift** will change the fit buttons to read **GU**. Pressing these will fit to the unit square rather than the cached bounds.
+* **Fit Grid**: Toggling ON the **Group** button will change the fit buttons to read **GU**. Pressing these will fit to the unit square rather than the cached bounds.
 
 
 .. _hotspot:
