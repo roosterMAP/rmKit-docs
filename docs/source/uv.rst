@@ -60,6 +60,7 @@ Click and drag within the box to move the entire selection, pull on a corner to 
 to resize along **U** or **V**.
 
 .. note::
+	* Removed for 4.0+ because it is redundant.
 	* Bind to a key in the addon Preferences in the ``UV Editor`` context or find it in the rmKit section of the UV Editor tools panel.
 
 
@@ -188,6 +189,17 @@ change the icons and functionality of the button.
 The uv tools are divided into four categories: Move/Slam, Rotate, Scale, and Fit. See below for breakdowns.
 
 
+.. _uvtransform:
+
+Falloff UV Transform
+=======================
+
+Click here to visit the docs for :ref:`Falloff Transform <fallofftransform>`
+
+.. note::
+	* Bind to a key in the addon Preferences in the ``UV Editor`` context or find it in the rmKit section of the UV Editor tools panel. It must be bound separately from the 3D version of the tool.
+
+
 GUI State Buttons
 -----------------
 
@@ -283,7 +295,7 @@ your scene and use it as an override to all archived atlases. Both approaches ar
 
 * ``Use Override Atlas``: If you wish to use a temp hotspot atlas without saving it to the archive you can load a sliced-up mesh into the ``Atlas`` property and use it for all Subsequent hotspot operations.
 
-* ``Use Trims``: Hotspoting can also be used for trim textures where the hotspot tiles infinitely along the **U** or **V** axis. When checked, subsequent hotspot operation will map the geometry to a hotspot like normal. But if the hotspot maps from 0-1 along an axis, then the uv's will be allowed to tile along that axis.
+* ``Filter``: Hotspoting can also be used for trim textures where the hotspot tiles infinitely along the **U** or **V** axis. Use this dropdown to force the hotspot tool to only consider or exclude trim hotspots.
 
 * ``Ins``: Inset the uvs after hotspoting by the provided scalar value. This is useful when you want to shrink boundary bevels/details. Alternatively, you can use the :ref:`Inset Scale UVs <insetscaleuvs>` operator.
 

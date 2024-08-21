@@ -84,6 +84,8 @@ Toggle Dimensions
 
 Toggles the visibility of a set of world axes drawn over the current selection that displays the world space dimensions.
 
+* Toggling ``Use Background Face Sel`` on will force the dimensions tool to measure the face selection while in vert or edge mode.
+
 .. note::
 	* Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-Utils section of the tools panel.
 

@@ -26,6 +26,13 @@
 		Your browser does not support the video tag.
 	</video>
 
+.. |video4| raw:: html
+
+	<video controls loop width="700">
+		<source src="_static/falloff.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
 
 
 MeshEdit Ops
@@ -99,6 +106,27 @@ This tools is designed to be used in combination with the :ref:`Workplane <workp
 
 .. note::
 	Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-MeshEdit section of the tools panel.
+
+
+.. _fallofftransform:
+
+Falloff Transform
+--------------
+
+|video4|
+
+``Falloff Transform`` enables the user to place two endpoints that weight subsequent transforms on a vert depending on its positioning between the endpoints.
+The closer a vert is to the weak end of the falloff helper, the less it will be transformed. The supported transform tools are Move, Scale, and Rotate.
+Each can be activated using the **G**, **S**. and **R** keys respectively. This tool also works in the UV editor.
+
+* **MMB Drag** will constrain the transformation to an axis.
+* **Shift MMB Drag** will constrain to a planar axis.
+* Pressing **C** will cycle between different ease functions.
+* Pressing **I** will reverse the order of the endpoints.
+
+.. note::
+	Bind in the addon Preferences in the ``3D View`` context or access it in the rmKit-MeshEdit section of the tools panel.
+	It is recommended that you use the radial menu shown in the video.
 
 
 .. _createtube:

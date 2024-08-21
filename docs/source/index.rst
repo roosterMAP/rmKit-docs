@@ -24,3 +24,4 @@ Contents
 	meshedit
 	layers
 	uv
+	export
