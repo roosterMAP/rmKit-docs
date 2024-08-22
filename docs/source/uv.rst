@@ -176,7 +176,7 @@ This is particularly useful when working with quad strips and Hotspots.
 .. _uvtransform:
 
 UV Transform and Orient
-=======================
+-----------------------
 
 .. figure:: _static/uvtransform.jpg
 	:scale: 100%
@@ -192,7 +192,7 @@ The uv tools are divided into four categories: Move/Slam, Rotate, Scale, and Fit
 .. _falloffuvtransform:
 
 Falloff UV Transform
-====================
+--------------------
 
 Click here to visit the docs for :ref:`Falloff Transform <fallofftransform>`
 
