@@ -189,10 +189,10 @@ change the icons and functionality of the button.
 The uv tools are divided into four categories: Move/Slam, Rotate, Scale, and Fit. See below for breakdowns.
 
 
-.. _uvtransform:
+.. _falloffuvtransform:
 
 Falloff UV Transform
-=======================
+====================
 
 Click here to visit the docs for :ref:`Falloff Transform <fallofftransform>`
 
