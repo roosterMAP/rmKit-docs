@@ -112,6 +112,17 @@ Sample the material under the mouse cursor and apply it to the selection faces.
 	* Bind to a key in the addon Preferences in the ``Mesh`` context.
 
 
+.. _grabapplyvcolor:
+
+Grab Apply Vertex Color
+-----------------------
+
+Sample the face corner colors under the mouse cursor and apply it to the selection.
+
+.. note::
+	* Bind to a key in the addon Preferences in the ``Mesh`` context.
+
+
 .. _quickmaterial:
 
 Quick Material
