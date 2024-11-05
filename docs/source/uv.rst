@@ -12,6 +12,13 @@
 		Your browser does not support the video tag.
 	</video>
 
+.. |video2| raw:: html
+
+	<video controls loop width="700">
+		<source src="_static/uvboxify.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
 
 UV Edit Ops
 ===========
@@ -88,15 +95,21 @@ This operator is only compatible with grid topologies.
 	* Bind to a key in the addon Preferences in the ``UV Editor`` context or find it in the rmKit section of the UV Editor tools panel.
 
 
-.. _rectanguarize:
+.. _boxify:
 
-Rectangularize
+Boxify
 --------------
 
-``Rectangularize`` is totally FUBAR. Do not use.
+|video2|
+
+``Boxify`` will map the selected uv faces to a rectangle and scale to preserve the aspect ratio. This algorithm will first unwrap the selection conformally, then identify four corners via an angle threshold,
+the pin the corners to a box shape, relax, pin the boundary to straight lines, and relax again. The success of the algorithm is highly dependent on how reasonably the conformal map can be mapped to a box shape.
+If the algorithm has trouble identifying the correct corner vertices, you can select 4 vertices on a single uv island and run the command again in vertex mode.
+
+.. note::
+	* Bind to a key in the addon Preferences in the ``UV Editor`` context or find it in the rmKit section of the UV Editor tools panel.
 
 
-.. _stitch:
 
 Stitch
 ------
