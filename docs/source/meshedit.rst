@@ -208,6 +208,18 @@ This is the same as running ``Arc Adjust`` with **Scale** set to 0.0.
 	* Bind in the addon Preferences in the ``Mesh`` context or access it in the rmKit-MeshEdit section of the tools panel.
 
 
+.. _extrudealongpath:
+
+Extrude Along Path
+------------------
+
+``Extrude Along Path`` extrudes the boundary edges along the background selection of edges. To use, simply make an edge selection for the path of the extrude, then make a face selection
+of what to extrude. Run the operation in face mode.
+
+.. note::
+	* Bind in the addon Preferences in the ``Mesh`` context or access it in the rmKit-MeshEdit section of the tools panel. There are two commands: One only offset along the path, the other offsets and rotates. The latter is more commonly used.
+
+
 .. _radialalign:
 
 Radial Align
