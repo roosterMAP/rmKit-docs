@@ -319,3 +319,24 @@ your scene and use it as an override to all archived atlases. Both approaches ar
 * ``Hotspot MOS``: The command must be bound in the addon preferences and only works in the **UV View**. Using the atlas defined by the materials of the selected faces, it finds the hotspot under the mouse cursor and maps all selected uv island to said hotspot.
 
 * ``GrabApplyUVBounds``: The command must be bound in the addon preferences and only works in the **3D View**. While, not strictly a Hotspot tool, it can be looked at as a 3D variant of ``Hotspot MOS``. It maps the bounds of the uvs of the current face selection to the bounds of the uv-island of the face under the mouse cursor.
+
+Hotspot Match
+-------------
+
+.. figure:: _static/hotspot3d.jpg
+	:scale: 100%
+	:align: center
+
+	GUI for 3DView Hotspot tools.
+
+As described earlyer running ``Hotspot Match`` from the **UV View** will map existing uvs, and running in the **3D View** will first auto unwrapped before scaled to the material world scale before mapping to a hotspot. This material world scale can be set in the :ref:`Quick Material <quickmaterial>` dialog.
+
+The hotspot tools in the **3D View** have additional controls and behaviors:
+
+* ``New Hotspot`` : see above
+
+* ``Ref Hotspot`` : see above
+
+* ``Use MultiUV`` : When checked it will use the **UV1** and **UV2** dropdowns to drive the uving behaviors for the first and second uv chanels on the active mesh respectively. Depending on your workflow and materials, it may be common to have a material using one uv channel blend with another material using the second. Iv both are present, you can tell ``Hotspot Match`` to hotspot on **UV1** and world space uv on **UV2**.
+
+* ``Hotspot Match`` : Run the op from the **3D View** context.
