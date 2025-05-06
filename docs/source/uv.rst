@@ -20,8 +20,10 @@
 	</video>
 
 
-UV Edit Ops
-===========
+rmKit UV Tools
+==============
+
+The following tools are available in the rmKit UV addon. You is a separate addon that is installed the same way as rmKit. See the :ref:`usage` section for more information.
 
 
 .. _uvloopringselection:
