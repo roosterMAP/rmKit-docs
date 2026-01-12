@@ -26,3 +26,7 @@ You can add or remove objects to the **Export List**, and export them by pressin
 	You can see that each string starting with a ``$`` is provided by blender. The rest is inserted on a per character basis.
 	In this case, each export item is exported in the same dir as the current .blend file and the fbx filename is the scene name, followed by an underscore, followed by the export item name.
 	This pattern can be customized by the user. For example, if you want to export all fbx's to a subdir called ``work`` and omit the scene name from the filename it could change to ``$SceneDir\work\$ObjectName``.
+
+.. note::
+	The export manager is only available as a separate addon. It is not included in the main rmKit or rmKitUV extensions.
+	Find it here: https://github.com/roosterMAP/rmKit_export 
